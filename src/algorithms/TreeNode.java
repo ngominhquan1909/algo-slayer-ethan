@@ -1,15 +1,17 @@
-public class Node{
+package algorithms;
+
+public class TreeNode {
     int data;
-    Node left;
-    Node right;
-    public Node(int data){
+    TreeNode left;
+    TreeNode right;
+    public TreeNode(int data){
         this.data = data;
         this.left = null;
         this.right = null;
     }
-    public static Node insert(Node root, int data){
+    public static TreeNode insert(TreeNode root, int data){
         if (root == null){
-            return new Node(data);
+            return new TreeNode(data);
         }
         else if (data > root.data){
             root.right = insert(root.right, data);
@@ -19,16 +21,16 @@ public class Node{
         }
         return root;
     }
-    public static Node insertIterative(Node root, int value) {
+    public static TreeNode insertIterative(TreeNode root, int value) {
 
-        Node newNode = new Node(value);
+        TreeNode newNode = new TreeNode(value);
 
         if (root == null) {
             return newNode;
         }
 
-        Node current = root;
-        Node parent = null;
+        TreeNode current = root;
+        TreeNode parent = null;
 
         while (current != null) {
             parent = current;

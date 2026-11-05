@@ -1,6 +1,6 @@
+package algorithms;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -8,12 +8,12 @@ public class MaxHeap {
 
     private final List<Integer> heap;
 
-    // Constructor: tạo MaxHeap rỗng
+    // Constructor: tạo algorithms.MaxHeap rỗng
     public MaxHeap() {
         heap = new ArrayList<>();
     }
 
-    // Constructor: xây dựng MaxHeap từ mảng
+    // Constructor: xây dựng algorithms.MaxHeap từ mảng
     public MaxHeap(int[] arr) {
         heap = new ArrayList<>();
 
@@ -61,7 +61,7 @@ public class MaxHeap {
         return heap.get(0);
     }
 
-    // Thêm phần tử vào MaxHeap
+    // Thêm phần tử vào algorithms.MaxHeap
     public void insert(int value) {
         heap.add(value);
 
@@ -181,7 +181,7 @@ public class MaxHeap {
         maxHeap.insert(30);
         maxHeap.insert(15);
 
-        System.out.println("MaxHeap:");
+        System.out.println("algorithms.MaxHeap:");
         maxHeap.display();
 
         System.out.println("Maximum: " + maxHeap.peek());

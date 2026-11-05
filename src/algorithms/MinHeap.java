@@ -1,3 +1,4 @@
+package algorithms;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,12 +8,12 @@ public class MinHeap {
 
     private final List<Integer> heap;
 
-    // Constructor: tạo MinHeap rỗng
+    // Constructor: tạo algorithms.MinHeap rỗng
     public MinHeap() {
         heap = new ArrayList<>();
     }
 
-    // Constructor: xây dựng MinHeap từ mảng
+    // Constructor: xây dựng algorithms.MinHeap từ mảng
     public MinHeap(int[] arr) {
         heap = new ArrayList<>();
 
@@ -103,7 +104,7 @@ public class MinHeap {
         // Xóa phần tử min cũ
         heap.remove(heap.size() - 1);
 
-        // Khôi phục tính chất MinHeap
+        // Khôi phục tính chất algorithms.MinHeap
         sink(0);
 
         return min;
@@ -181,7 +182,7 @@ public class MinHeap {
         minHeap.insert(30);
         minHeap.insert(15);
 
-        System.out.println("MinHeap:");
+        System.out.println("algorithms.MinHeap:");
         minHeap.display();
 
         System.out.println("Minimum: " + minHeap.peek());
@@ -198,7 +199,7 @@ public class MinHeap {
         System.out.println("Ascending order:");
         minHeap.printAscending();
 
-        System.out.println("Build MinHeap from array:");
+        System.out.println("Build algorithms.MinHeap from array:");
 
         MinHeap anotherHeap =
                 new MinHeap(new int[]{4, 10, 3, 5, 1, 15});

@@ -1,3 +1,5 @@
+package algorithms.exercises;
+
 import java.util.Arrays;
 public class CountPairs {
     public static long countPairs(int[] arr){
