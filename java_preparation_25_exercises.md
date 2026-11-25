@@ -635,7 +635,7 @@ size()
 ```text
 head
  ↓
-algorithms.TreeNode → algorithms.TreeNode → algorithms.TreeNode → null
+Node → Node → Node → null
 ```
 
 ### Example
